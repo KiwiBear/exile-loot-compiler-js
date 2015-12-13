@@ -103,13 +103,13 @@ function compileLoot(next) {
         	name: group.name,
         	count: items.length,
         	half: 0,
-        	halfIndex: Math.floor(items.length / 2),
+        	halfIndex: Math.floor(items.length / 2) - 1,
         	sum: items.reduce(function (a, b) {return a + b.chance;}, 0),
         	items: []
         };
         var chance = 0;
         items.sort(function (a, b) {
-            return a.chance - b.chance;
+            return b.chance - a.chance;
         });
     	items.forEach(function (item, i) {
     		var percent = item.chance / table.sum;

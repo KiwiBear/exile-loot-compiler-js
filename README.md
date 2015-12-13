@@ -33,39 +33,39 @@ Drinks
 class CfgLootTables {
 	class CivillianLowerClass {
 		count = 6;
-		half = 5904.79;
-		halfIndex = 3;
+		half = 6005.32;
+		halfIndex = 2;
 		sum = 10000;
 		items[] = 
 		{
-			{1179.78, "Exile_Item_CookingPot"},// 11.7978%
-			{2421.64, "Exile_Item_PowerDrink"},// 12.4187%
-			{3994.68, "Exile_Item_Beer"},// 15.7303%
-			{5904.79, "Exile_Item_EnergyDrink"},// 19.1011%
-			{7871.08, "Exile_Item_CanOpener"},// 19.6629%
-			{10000, "Exile_Item_PlasticBottleFreshWater"}// 21.2892% 
+			{2128.92, "Exile_Item_PlasticBottleFreshWater"},// 21.2892%
+			{4095.21, "Exile_Item_CanOpener"},// 19.6629%
+			{6005.32, "Exile_Item_EnergyDrink"},// 19.1011%
+			{7578.36, "Exile_Item_Beer"},// 15.7303%
+			{8820.22, "Exile_Item_PowerDrink"},// 12.4187%
+			{10000, "Exile_Item_CookingPot"}// 11.7978% 
 		};
 	};
 	class Food {
 		count = 2;
-		half = 10000;
-		halfIndex = 1;
+		half = 6250;
+		halfIndex = 0;
 		sum = 10000;
 		items[] = 
 		{
-			{3750, "Exile_Item_CookingPot"},// 37.5%
-			{10000, "Exile_Item_CanOpener"}// 62.5% 
+			{6250, "Exile_Item_CanOpener"},// 62.5%
+			{10000, "Exile_Item_CookingPot"}// 37.5% 
 		};
 	};
 	class Drinks {
 		count = 2;
-		half = 10000;
-		halfIndex = 1;
+		half = 6315.79;
+		halfIndex = 0;
 		sum = 10000;
 		items[] = 
 		{
-			{3684.21, "Exile_Item_PowerDrink"},// 36.8421%
-			{10000, "Exile_Item_PlasticBottleFreshWater"}// 63.1579% 
+			{6315.79, "Exile_Item_PlasticBottleFreshWater"},// 63.1579%
+			{10000, "Exile_Item_PowerDrink"}// 36.8421% 
 		};
 	};
 };
