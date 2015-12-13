@@ -24,42 +24,48 @@ Then run install.bat and then compile.bat to generate a CfgLootTables.hpp
 ```
 Compiles into
 ```
+/*
+Loot Groups
+CivillianLowerClass
+Food
+Drinks
+*/
 class CfgLootTables {
 	class CivillianLowerClass {
 		count = 6;
-		half = 0.651685;
+		half = 5904.79;
 		halfIndex = 3;
-		sum = 1;
+		sum = 10000;
 		items[] = 
 		{
-			{0.124187, "Exile_Item_PowerDrink"},// 12.4187%
-			{0.337079, "Exile_Item_PlasticBottleFreshWater"},// 21.2892%
-			{0.455056, "Exile_Item_CookingPot"},// 11.7978%
-			{0.651685, "Exile_Item_CanOpener"},// 19.6629%
-			{0.808989, "Exile_Item_Beer"},// 15.7303%
-			{1, "Exile_Item_EnergyDrink"}// 19.1011% 
+			{1179.78, "Exile_Item_CookingPot"},// 11.7978%
+			{2421.64, "Exile_Item_PowerDrink"},// 12.4187%
+			{3994.68, "Exile_Item_Beer"},// 15.7303%
+			{5904.79, "Exile_Item_EnergyDrink"},// 19.1011%
+			{7871.08, "Exile_Item_CanOpener"},// 19.6629%
+			{10000, "Exile_Item_PlasticBottleFreshWater"}// 21.2892% 
 		};
 	};
 	class Food {
 		count = 2;
-		half = 1;
+		half = 10000;
 		halfIndex = 1;
-		sum = 1;
+		sum = 10000;
 		items[] = 
 		{
-			{0.375, "Exile_Item_CookingPot"},// 37.5%
-			{1, "Exile_Item_CanOpener"}// 62.5% 
+			{3750, "Exile_Item_CookingPot"},// 37.5%
+			{10000, "Exile_Item_CanOpener"}// 62.5% 
 		};
 	};
 	class Drinks {
 		count = 2;
-		half = 1;
+		half = 10000;
 		halfIndex = 1;
-		sum = 1;
+		sum = 10000;
 		items[] = 
 		{
-			{0.368421, "Exile_Item_PowerDrink"},// 36.8421%
-			{1, "Exile_Item_PlasticBottleFreshWater"}// 63.1579% 
+			{3684.21, "Exile_Item_PowerDrink"},// 36.8421%
+			{10000, "Exile_Item_PlasticBottleFreshWater"}// 63.1579% 
 		};
 	};
 };

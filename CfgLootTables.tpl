@@ -5,12 +5,12 @@ Loot Groups
 class CfgLootTables {<% tables.forEach(function(group) { %>
 	class <%= group.name %> {
 		count = <%= group.count %>;
-		half = <%= group.half %>;
+		half = <%= group.half * 10000 %>;
 		halfIndex = <%= group.halfIndex %>;
-		sum = <%= group.sum %>;
+		sum = <%= group.sum * 10000 %>;
 		items[] = 
 		{<% group.items.forEach(function(item, i) { %>
-			{<%= item.chance %>, "<%= item.name %>"}<% if (i != group.items.length - 1) { %>,<% } %>// <%= item.percent %>%<% }) %> 
+			{<%= item.chance * 10000 %>, "<%= item.name %>"}<% if (i != group.items.length - 1) { %>,<% } %>// <%= item.percent %>%<% }) %> 
 		};
 	};<% }) %>
 };

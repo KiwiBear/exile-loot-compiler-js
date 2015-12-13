@@ -108,6 +108,9 @@ function compileLoot(next) {
         	items: []
         };
         var chance = 0;
+        items.sort(function (a, b) {
+            return a.chance - b.chance;
+        });
     	items.forEach(function (item, i) {
     		var percent = item.chance / table.sum;
     		chance += percent;
@@ -116,12 +119,10 @@ function compileLoot(next) {
     			chance: round(chance, dpcount),
     			percent: round(percent * 100, 4)
     		});
-
     		if (i == table.halfIndex) {
     			table.half = round(chance, dpcount);
     		}
     	});
-
     	table.sum = round(table.sum, dpcount);
         tables.push(table);
     });
